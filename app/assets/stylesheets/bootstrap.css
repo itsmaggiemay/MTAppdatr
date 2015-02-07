@@ -4779,6 +4779,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   padding: 19.5px 15px;
   font-size: 19px;
   line-height: 21px;
+  text-shadow: 1px 1px 1px #fff;
 }
 
 .navbar-brand:hover,
@@ -7503,6 +7504,7 @@ td.visible-print {
   font-size: 32px;
   font-weight: 700;
   text-transform: uppercase;
+  
 }
 
 .has-warning .help-block,

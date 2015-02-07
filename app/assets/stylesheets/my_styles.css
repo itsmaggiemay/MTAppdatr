@@ -16,6 +16,8 @@
   text-align: right;
   padding-right: 200px;
   padding-top: 100px;
+  text-shadow: 1px 1px 1px #000, 
+               3px 3px 5px black; 
 }
 
 .sign-in {
@@ -24,6 +26,14 @@
   list-style-type: none;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
+  text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 
 .sign-in a {
@@ -166,8 +176,7 @@ font-family: "Montserrat", helvetica;
 /* specific typography styles */
 
 .clients {
-  margin-top: 35px;
-  margin-left: 40px;
+
   font-family: 'Montserrat';
   font-size: 28px;
   text-align: center;
@@ -324,3 +333,11 @@ li > a:focus {
 }
 
 
+
+/* organize later*/
+.summary{
+  font-family: 'Montserrat';
+  font-size: 18px;
+  text-align: justify;
+  color: #fff;
+}

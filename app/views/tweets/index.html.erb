@@ -40,19 +40,17 @@
               <div class="col-lg-4" style="background: rgba(0,0,0,0.5); height: 434px">
                 <% if not @positivity_percentage.nil? %>
 
-                  <div id="positive" ><h4 class="appdatr">MTAppdatR says the <%= params[:hashtag] %>  has: </h4><h1><%= "#{@positivity_percentage}%" %></h2><h2 class="happy-large"> POSITIVE feedback.</h2></div>
+                  <div id="positive" ><h4 class="appdatr">MTAppdatR says the <span class="hashtag"><%= params[:hashtag] %></span>  has: </h4><h1><%= "#{@positivity_percentage}%" %></h2><h2 class="happy-large"> POSITIVE feedback.</h2></div>
                   <div id="negative"><h1><%= "#{100 - @positivity_percentage}%" %></h1><h2 class="happy-large"> NEGATIVE feedback.</h2></div>
                     <%else%>
-                        <h2> Learn how the trains are REALLY running.</h2>
-                        <h4>Are you sick of the MTA always not giving you acurate information and updates?</h4>
-                          <h6 class="dummy-copy">Using MTAppdatr you can see how the trains are running based on twitter feeds and using sentiment anaylsis.</h6>
-                          <h6 class="dummy-copy">To search for the line just submit the train you are looking for ex: #Atrain</h6>
+                         <h4 class="clients">Learn how the trains are REALLY running.</h4><Br>
+                          <h4 class="summary"><br>Are you sick of the MTA always not giving you accurate information and updates? Using MTAppdatr you can see how the trains are running using twitter feeds and sentiment anaylsis. To search for the line just submit the train you are looking for. For example: #Atrain</h4>
                     <% end %>
                  </div>
             <div id="tweet-results" class="col-lg-4" style="background: rgba(0,0,0,0.5); height: 434px">
               <% if not @tweets.nil? and @tweets.length > 0 %>
                 <ul>  <% @tweets.each do |tweet| %>
-                        Tweet Text: <%= tweet.tweet_text %> || <%= tweet.tweet_date.strftime("%m/%d/%Y %l:%M %p") %><br />
+                        Tweet Text: <%= tweet.tweet_text %> || <%= tweet.tweet_date.strftime("%m/%d/%Y %l:%M %p") %><br /><br><br>
                       <% end %>
                 </ul>
                  <%else%>
