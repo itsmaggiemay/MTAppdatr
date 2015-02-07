@@ -1,0 +1,11 @@
+<% if @tweets.length > 0 %>
+  <ul>
+    <% @tweets.each do |tweet| %>
+    <li>
+      Username: <%= tweet.user.screen_name %><br />
+      Tweet Text: <%= tweet.tweet_text %><br />
+      Tweet Date: <%= tweet.tweet_date.to_s %><br />
+    </li>
+    <% end %>
+  </ul>
+<% end %>
